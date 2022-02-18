@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+input,
+label {
+    display: block;
+    width: 100%
+}
+
+input:focus,
+label:focus {
+    outline: none;
+    /*Para retirar a borda azul quando da dois cliques no nome*/
+}
+
+a {
+    color: red;
+}
+
+body {
+    padding: 3vh;
+    background: url(papel.jpg) no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#main-container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /*Os margins são para centralizar no meio da tela*/
+    background: rgba(71, 71, 71, 0.6);
+    border-radius: 12px;
+    padding: 0px 20px;
+    border: rgba(0, 0, 0, 0.4) solid 1.5px;
+    text-align: center;
+}
+
+#main-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+
+/* -------------------------------- direcionamento -------------------------------- */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    /*Define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas*/
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 49%;
+    position: relative;
+    flex-grow: 0;
+}
+
+.basis-150 {
+    flex-basis: 150px;
+    margin-right: 148px;
+}
+
+.basis-400 {
+    flex-basis: 400px;
+}
+
+.basis-250 {
+    flex-basis: 250px;
+}
+
+.basis-100 {
+    flex-basis: 130px;
+}
+
+
+/* -------------------------------- direcionamento -------------------------------- */
+
+.cep {
+    width: 50%;
+}
+
+.btn-cadastrar {
+    color: red;
+    font-size: 20px;
+    width: 160px;
+}
+
+.spacing {
+    margin-left: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+input {
+    border-bottom: 2.5px solid #000000;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+}
+
+select {
+    border-bottom: 2.5px solid #000000;
+    padding: 10.5px;
+    font-size: 1em;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input:focus {
+    border-color: rgba(35, 151, 93, 0.692);
+}
+
+input[type="submit"] {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: rgba(255, 255, 255, 0.6) solid 3px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement,
+#agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation {
+    color: #FF1A1A;
+    position: absolute;
+    top: 57px;
+    font-size: 1em;
+}
+
+.template {
+    display: none;
+}
+
+
+/*-----------------------------------------------------------*/
+
+:root {
+    --cor-aviso: #df2525;
+    --cor-sucesso: #047900;
+}
+
+.input-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalido .input {
+    border: 1px solid var(--cor-aviso);
+    border-radius: 7px;
+}
+
+.input-container--invalido .input-label {
+    color: var(--cor-aviso);
+}
+
+.input-mensagem-erro {
+    display: none;
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: var(--cor-aviso);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
